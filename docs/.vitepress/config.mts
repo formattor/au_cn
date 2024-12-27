@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    base: "/au_cn/",
     title: "Aurelia.cn",
     description: "A VitePress Site",
     head: [
