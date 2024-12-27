@@ -12,7 +12,7 @@ hero:
     actions:
         - theme: brand
           text: 开始
-          link: /introduction
+          link: /_01_introduction
         - theme: alt
           text: 给特哈布
           link: https://github.com/aurelia/aurelia

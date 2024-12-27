@@ -27,7 +27,7 @@ export default defineConfig({
         sidebar: [
             {
                 text: "介绍",
-                link: "/introduction",
+                link: "/_01_introduction",
             },
             {
                 text: "介绍",
