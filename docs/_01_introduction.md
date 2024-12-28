@@ -77,10 +77,45 @@ discord
 embody
 :::
 
-# 拥抱精品生态系统
+## 拥抱精品生态系统
+
+与其他人数更多的社区相比 Aurelia 的生态和社区也许没那么大，这种感觉处于劣势的状态其实是最大的长处。在 Web 框架中 Aurelia 展现出一种精品店的选择，优先质量而不是数量而且培养了一个关系紧密的高度活跃的社区。这种方法转化更为专注，一贯和专注开发体验。无论是从框架还是您从社区中获得的支持来说。
+
+### 小社区的优势
+
+-   <strong>直接影响：</strong>杂技一个更小的社区，每一个成员的声音和贡献都有重大的影响。开发者可以直接访问核心团队，培养一个可以得到回应和贡献的合作的环境从而影响框架的进化。
+-   <strong>质量大于数量：</strong>Aurelia 专注于提供一个高质量，精炼的开发体验。这意味着在生态系统中的每一个插件，仓库和工具都被谨慎的设计并且通过全面的审查去满足一个高质量的标准。
+-   <strong>培育创新：</strong>一个小的生态不代表能力限制。相反，它经常代表着革命性的项目和创造性的解决问题方式，跳出框架思维是做为开发者被鼓励的。
+-   <strong>强大的连接：</strong>小社区培育更亲密的关系，导致更多有意义的互动，合作和归属感。这种环境有益于营造一个支持互助的氛围以让各个级别的开发者都可以成长。
+
+### 为什么大小不是一切
+
+社区和生态的大小不应该是其效率的唯一标准。在许多方面，交互的质量，成员的奉献
 
 ::: danger 不懂的词汇
 
 boutique
-
+populous
+counterpart
+perceived
+underdog
+strength
+prioritizing
+foster
+tight-knit
+engaged
+approach
+evolution
+refined
+thoroughly
+vet
+nurturing
+capabilities
+interactions
+conducive
+atmosphere
+sole
+criterion
+dedication
+alignment
 :::

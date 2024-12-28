@@ -10,15 +10,13 @@ export default defineConfig({
             "link",
             {
                 rel: "icon",
-                type: "image/png",
-                sizes: "16x16",
-                href: "../public/logo.png",
+                href: "/logo.png",
             },
         ],
     ],
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        logo: "../public/header.svg",
+        logo: "/header.svg",
         siteTitle: "",
         nav: [
             { text: "首页", link: "/" },
@@ -33,13 +31,32 @@ export default defineConfig({
             {
                 text: "介绍",
                 items: [
-                    { text: "快速开始", link: "/markdown-examples" },
-                    { text: "致新开发者的Aurelia", link: "/api-examples" },
+                    { text: "快速开始", link: "/_02_quickStart" },
+                    { text: "致新开发者的Aurelia", link: "/_03_forDeveloper" },
                     {
                         text: "你好，世界",
-                        link: "/api-examples",
+                        link: "/_04_helloWorld",
                         items: [
-                            { text: "创建你第一个应用", link: "/api-examples" },
+                            {
+                                text: "创建你第一个应用",
+                                link: "/_04_1_firstApp",
+                            },
+                            {
+                                text: "你的第一个组件 - 第一部分：view model",
+                                link: "/_04_2_componentViewModel",
+                            },
+                            {
+                                text: "你的第一个组件 - 第二部分：view",
+                                link: "/_04_3_componentView",
+                            },
+                            {
+                                text: "运行我们的应用",
+                                link: "/_04_4_runApp",
+                            },
+                            {
+                                text: "下一步",
+                                link: "/_04_5_nextStep",
+                            },
                         ],
                         collapsed: true,
                     },
@@ -48,7 +65,7 @@ export default defineConfig({
         ],
 
         socialLinks: [
-            { icon: "github", link: "https://github.com/vuejs/vitepress" },
+            { icon: "github", link: "https://github.com/aurelia/aurelia" },
         ],
     },
 });

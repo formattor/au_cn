@@ -1,0 +1,14 @@
+:root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(
+        160deg,
+        #ba4df6,
+        #ef2f8b
+    );
+    --vp-button-brand-bg: #ef2f8b;
+    --vp-button-brand-hover-bg: #ba4df6;
+
+    .image-src {
+        max-width: 900px;
+    }
+}
