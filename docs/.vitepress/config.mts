@@ -21,8 +21,8 @@ export default defineConfig({
         logo: "../public/header.svg",
         siteTitle: "",
         nav: [
-            { text: "Home", link: "/" },
-            { text: "Examples", link: "/markdown-examples" },
+            { text: "首页", link: "/" },
+            { text: "官网", link: "https://aurelia.io/" },
         ],
 
         sidebar: [

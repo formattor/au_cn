@@ -31,6 +31,56 @@ overview
 
 ## 为什么选择 Aurelia?
 
+在前端开发框架的海洋中 Aurelia 作为灯塔出现具有革命性力量，这是 Aurelia 为什么会是你下一个项目完美选择的原因：
+
+-   <strong>一个生态：</strong>Aurelia 是你的瑞士军刀，提供了从依赖注入到路由的所有东西，无需处理多个仓库。它的生态系统中的可扩展插件有国际化，验证，还有更多，还能被工具支持比如一个脚手架和 VS Code 的插件的无缝开发。而且灵活是 Aurelia 的关键；你可以自定义每个方面，包括模板/绑定引擎。
+
+-   <strong>无与伦比的性能：</strong>速度和效率是 Aurelia 的 DNA。由于它复杂的批处理渲染和搞笑的内存使用，使得它始终在基准测试中优于竞争对手。
+-   <strong>数据绑定干得好：</strong>Aurelia 调和了数据绑定单向数据流的安全性和开发效率。确保性能和开发中的易用性。
+-   <strong>动态世界中的稳定性：</strong>自从我们 2016 年发布的 1.0 版本，Aurelia 保持了 API 的稳定性和创新性而没有任何破坏性更改，这是一个我们承诺给开发者以获取信任的一个证明。
+-   <strong>坚持高标准：</strong>Aurelia 是标准合规性的典范，专注于现代 JavaScript 和 Web Components 而没有不必要的抽象。
+-   <strong>为开发者赋能：</strong>Aurelia 的哲学是简单：为开发者提供纯净的 JS/TS 环境而且摆脱阻碍。这样的结果是清楚，更可易于维护的代码。
+-   <strong>简单易用：</strong>Aurelia 的设计是直观的和一致的，在可靠简单的原则下提供最小的学习曲线和最大的生产效率。
+-   <strong>无缝集成：</strong>Aurelia 和其他适配的很好。它贯彻 Web 标准使它在集成其他第三方库或框架的时候如沐春风。
+-   <strong>活跃的开源社区：</strong>和 Aurelia 一起拥抱开源精神。在 MIT 的许可下，没有限制条款。加入社区去兴旺合作和革新。
+-   <strong>欢迎社区支持：</strong>我们活跃的核心团队和 Discord 服务器体现了一种欢迎支持的文化，使每个开发者在 Aurelia 家庭中成为一个有价值的成员。
+
 ::: danger 不懂的词汇
 emerges
+beacon
+ecosystem
+Swiss Army knife
+eliminating
+seamless
+Unparalleled
+consistently
+outperforms
+competitor
+benchmark
+sophisticated
+batched
+harmonizes
+productivity
+innovating
+adherence
+paragon
+compliance
+abstraction
+breeze
+vibrant
+embrace
+ethos
+restrictive
+clause
+thrive
+discord
+embody
+:::
+
+# 拥抱精品生态系统
+
+::: danger 不懂的词汇
+
+boutique
+
 :::
