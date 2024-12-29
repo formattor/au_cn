@@ -23,6 +23,18 @@ export default defineConfig({
             { text: "官网", link: "https://aurelia.io/" },
         ],
 
+        outlineTitle: "概要",
+
+        outline: [2, 3],
+
+        // lastUpdated: {},
+
+        docFooter: { prev: "向左", next: "向右" },
+
+        // footer: { message: "test", copyright: "tt" },
+
+        search: { provider: "local", options: {} },
+
         sidebar: [
             {
                 text: "介绍",

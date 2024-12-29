@@ -20,9 +20,107 @@ Aurelia 中绑定属性的基础语法是简单的：
 你可以绑定几乎所有在综合 HTML 属性列表的属性，可以[在这](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)查找
 
 ::: info
-123
+在一个空表达式的绑定中，比如`attribute-name.bind`或者`attribute-name.bind=""`，`表达式`是自动影响目标的：他将会有一个`目标`值使用驼峰版本，所以`attribute-name.bind=""`意味着`attribute-name.bind="attributeName"`，这种行为也体现在其他命令上：
+
+-   `.one-time`
+-   `.to-view`
+-   `.from-view`
+-   `.two-way`
+-   `.attr`
+
 :::
+
+## 绑定技巧和语法
+
+Aurelia 提供了多个绑定属性的方法，每种方法都有语法和用例。
+
+### 插值绑定
+
+插值允许嵌入动态的字符串值，这有一个例子使用了插值绑定`id`属性。
+
+```html
+<div>
+    <h1 id="${headingId}">My Heading</h1>
+</div>
+```
+
+### 关键字绑定
+
+Aurelia 提供了几种绑定关键字，每一种定义都是 view 和 view model 之间的数据流：
+
+-   `one-time`: 从 view model 更新一次 view ，不对后来的影响更改。
+-   `to-view`/`one-way`: 从 view-model 持续的更新 view。
+-   `from-view`: 更新 view-model 基于 view 的改变。
+-   `two-way`: 创建双向数据流，保持 view 和 view model 的同步。
+-   `bind`: 自动决定合适的绑定模式，对表单元素默认是`two-way` ，其他元素是`to-view`
+
+### 关键字绑定的例子
+
+```html
+<input type="text" value.bind="firstName" />
+<input type="text" value.two-way="lastName" />
+<input type="text" value.from-view="middleName" />
+
+<a class="external-link" href.bind="profile.blogUrl">Blog</a>
+<a class="external-link" href.to-view="profile.twitterUrl">Twitter</a>
+<a class="external-link" href.one-time="profile.linkedInUrl">LinkedIn</a>
+```
+
+### 图像绑定
+
+绑定图像属性，例如`src`和`alt`，如此简单：
+
+```html
+<img src.bind="imageSrc" alt.bind="altValue" />
+```
+
+### 禁用元素
+
+绑定`disabled`属性到禁用到按钮以动态禁用输入。
+
+```html
+<button disabled.bind="disableButton">Disabled Button</button>
+```
+
+### innerHTML 和 TextContent
+
+在`innerhtml`和`texthtml`之间选择渲染 HTML 内容还是纯文本内容。
+
+```html
+<div innerhtml.bind="htmlContent"></div>
+<div textcontent.bind="textContent"></div>
+```
+
+## 高级绑定技巧
+
+### 属性绑定是怎么工作的
+
+Aurelia 使用映射函数去把 properties 转换成 HTML attributes。attribute 映射器处理规则，经典的改变 kebab-case 为 camelCase。然而，不是所有 properties 都直接映射为 attributes。
+
+### 使用`.attr`标签
+
+如果自动映射失败了，使用`.attr`确保合适的属性绑定：
+
+```html
+<input pattern.attr="patternProp" />
+```
+
+### 属性绑定行为
+
+使用`.bind`和`& attr`执行属性绑定的行为以指定绑定类型。
+
+```html
+<input pattern.bind="patternProp & attr" />
+```
+
+## 语法说明
+
+1. 表达式语法
 
 ::: danger 不懂的词汇
 comprehensive
+Interpolation
+embedding
+subsequent
+varieties
 :::
