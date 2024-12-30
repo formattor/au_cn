@@ -117,10 +117,45 @@ Aurelia 使用映射函数去把 properties 转换成 HTML attributes。attribut
 
 1. 表达式语法
 
+去理解绑定语法的种类，或者为什么我们有绑定命令和插值，通过以下的例子看看 JS 对应部分：
+
+```js
+const firstName = "John";
+const lastName = "Doe";
+
+const fullName1 = `${firstName} ${lastName}`;
+const fullname2 = firstName + " " + lastName;
+const fullName3 = firstName.concat(" ", lastName);
+```
+
+以上所有例子从`firstName`和`lastName`去构建`fullName`都获得了相同的结果，但至少有三种方法！这是为了说明有时候人们为了偏好喜欢使用一个超过另一个，而且框架应该有这种灵活性去反映在 JS 这个语言上。
+
+2. 属性定位语法
+
+另外一个困惑点是`.bind`和`.attr`语法的可用性。有人会问为什么我们需要它们。
+
+考虑以下设置`id`属性在`<input>`元素上的例子。
+
+```js
+const input = document.createElement("input");
+input.id = "first-name";
+input.setAttribute("id", "first-name");
+```
+
+通过在`<input>`上设置 id 通过`id`属性或者调用`setAttribute('id',...)`都会获得相同的结果，但是我们有两种方式！这部分是因为一个人可能的偏好，还可能使 Aurelia 和属性工作的事实，而且不是所有 properties 都反应他们的 attributes 对应。例如：
+
+```html
+<input my-custom-attr.bind="someValue" />
+```
+
 ::: danger 不懂的词汇
 comprehensive
 Interpolation
 embedding
 subsequent
 varieties
+counter
+illustrate
+availability
+counterparts
 :::
