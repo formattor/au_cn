@@ -148,6 +148,12 @@ input.setAttribute("id", "first-name");
 <input my-custom-attr.bind="someValue" />
 ```
 
+`my-custom-attr.bind="someValue"`将会基于`someValue`被转换成在`<input>`上可以更新的绑定属性`myCustomAttr`。但是当属性变化的时候 html 不会对这个`myCustomAttr`属性作出反应。如果我们想要 html 中的`<input>`映射它，我们需要调用`input.setAttribute('my-custom-attr')`。`.attr`是一个实现它的简单方式。
+
+::: info
+请记住，插值和关键字绑定实现了相同的结果，而且不会有什么性能或功能上的区别。选择语法基于你的偏好和你项目的指定要求。
+:::
+
 ::: danger 不懂的词汇
 comprehensive
 Interpolation

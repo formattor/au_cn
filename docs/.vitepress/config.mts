@@ -90,7 +90,7 @@ export default defineConfig({
                             },
                             {
                                 text: "事件绑定",
-                                link: "/_05_1_attrBinding",
+                                link: "/_05_2_eventBinding",
                             },
                             {
                                 text: "文本",
