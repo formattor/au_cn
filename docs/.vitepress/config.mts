@@ -93,12 +93,12 @@ export default defineConfig({
                                 link: "/_05_2_eventBinding",
                             },
                             {
-                                text: "文本",
-                                link: "/_05_1_attrBinding",
+                                text: "文本插值",
+                                link: "/_05_3_textInterpolation",
                             },
                             {
-                                text: "模板承诺",
-                                link: "/_05_1_attrBinding",
+                                text: "模板Promises",
+                                link: "/_05_4_templatePromises",
                             },
                             {
                                 text: "模板引用",

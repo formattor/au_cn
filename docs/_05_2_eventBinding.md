@@ -326,13 +326,31 @@ export class MyViewModel {
 <textarea keydown.trigger:ctrl+75="openSearchDialog()">
 ```
 
-75 is the charcode of the upper case letter K.
-
-Even though direct, it's not always clear 75 means when looking at the template, so it's often desirable to use the real letter K instead. Though Aurelia is not taught to, by default, understand the letter K means the code 75. You can teach Aurelia by adding to the IKeyMapping:
-
 `75`是大写字母 K 的字符码。
 
-尽管很直接，当我们在模板上看到它的的时候也经常不会很清楚 75 的含义，所以常用的可取的方式是使用真实的字母 K 替代。尽管 Aurelia 没有教这么做，默认情况下，理解 K 意味着
+尽管很直接，当我们在模板上看到它的的时候也经常不会很清楚 `75` 的含义，所以常用的可取的方式是使用真实的字母 `K` 替代。尽管 Aurelia 没有教这么做，默认情况下，理解字符 `K`的意思是`75`，你可以通过添加`IKeyMapping`的方式教给 Aurelia：
+
+```js
+import { AppTask, IKeyMapping } from "aurelia";
+
+Aurelia.register(
+    AppTask.creating(IKeyMapping, (mapping) => {
+        mapping.keys.upper_k = "K";
+    })
+);
+```
+
+在功能加强之后，`:ctrl+upper_k`修饰符将会被理解为`ctrl+75`或者`ctrl`+大写`K`键。
+
+注意我们不能在 HTML 中使用大写字母`K`作为修饰符，因为 HTML 是大小写不敏感的。我们用在例子中，`upper_k`是可以替代的方法，而且可以直接添加映射。
+
+::: info 提示
+默认情况下，Aurelia 为所有 a-z 之间的小写字母提供了字符码和字符的映射，所以`:ctrl+a`和`:ctrl+97`都可以使用。对于大写字母，只提供了字符码的映射，例如：`:65`代表了大写字母 A。
+:::
+
+## 结论
+
+Aurelia 2 中的事件绑定是强大直观的功能可以使你创建动态的响应式的应用。通过理解语法和事件绑定的能力，你可以利用 Aurelia 2 全部的潜力去优雅高效的处理用户交互。记住如利用`.trigger`命令在大多数方案中以及保留`.capture`的特殊的的例子中你需要早早的阻止在事件传播周期中。用这些工具，你可以创建一个无缝的用户体验去响应每次点击，键盘和交互。
 
 ::: danger 不懂的词汇
 delve
@@ -350,4 +368,7 @@ delimiter
 declaratively
 letter
 desirable
+case insensitive
+harness
+reserve
 :::
