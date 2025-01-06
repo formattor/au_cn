@@ -102,18 +102,22 @@ export default defineConfig({
                             },
                             {
                                 text: "模板引用",
-                                link: "/_05_1_attrBinding",
+                                link: "/_05_5_templateRef",
                             },
                             {
                                 text: "模板变量",
-                                link: "/_05_1_attrBinding",
+                                link: "/_05_6_templateVar",
                             },
                             {
                                 text: "全局",
-                                link: "/_05_1_attrBinding",
+                                link: "/_05_7_globals",
                             },
                         ],
                         collapsed: true,
+                    },
+                    {
+                        text: "自定义属性",
+                        link: "/_06_customAttr",
                     },
                 ],
             },
