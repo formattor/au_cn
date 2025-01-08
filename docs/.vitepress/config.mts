@@ -119,6 +119,14 @@ export default defineConfig({
                         text: "自定义属性",
                         link: "/_06_customAttr",
                     },
+                    {
+                        text: "数值转换器（管道）",
+                        link: "/_07_pipes",
+                    },
+                    {
+                        text: "绑定行为",
+                        link: "/_08_bindingBehavior",
+                    },
                 ],
             },
         ],
